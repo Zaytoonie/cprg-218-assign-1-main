@@ -1,0 +1,39 @@
+/* SETUP */
+.card-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type:none;
+    gap: 35px;
+    padding: 60px;
+}
+
+.card 
+{ width: auto; }
+
+.card img
+{ width: 100%; height: auto; }
+
+
+/* PHONE */
+@media screen and (min-width: 480px) 
+{
+    .card-container
+    {grid-template-columns: repeat(1, 1fr);}
+}
+
+
+/* TABLET */
+@media screen and (min-width: 768px) 
+{
+    .card-container
+    {grid-template-columns: repeat(2, 1fr);}
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1200px)
+{
+    .card-container
+    {grid-template-columns: repeat(3, 1fr);}
+}
